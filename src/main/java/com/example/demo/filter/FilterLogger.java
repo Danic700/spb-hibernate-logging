@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 import org.springframework.web.util.ContentCachingRequestWrapper;
 import org.springframework.web.util.ContentCachingResponseWrapper;
 
@@ -24,7 +23,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class FilterLogger implements Filter {
 	
-	   private static final String CORRELATION_ID_HEADER_NAME = "X-Correlation-Id";
 	   private static final String CORRELATION_ID_LOG_VAR_NAME = "correlationId";
 
 

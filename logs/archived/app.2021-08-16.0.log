@@ -1,0 +1,245 @@
+2021-08-16 18:46:04,047 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-5] GET/books
+2021-08-16 18:46:04,049 DEBUG org.hibernate.SQL [http-nio-8080-exec-5] select book0_.id as id1_0_, book0_.name as name2_0_ from book book0_
+2021-08-16 18:46:04,051 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [http-nio-8080-exec-5] Session Metrics {
+    47900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    30600 nanoseconds spent preparing 1 JDBC statements;
+    105900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    3200 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 18:46:04,051 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-5] [{"id":1,"name":"The Tartar Steppe"},{"id":2,"name":"Poem Strip"},{"id":3,"name":"Restless Nights: Selected Stories of Dino Buzzati"}]
+2021-08-16 19:37:07,583 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-7 housekeeper] HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=48m45s817ms344µs800ns).
+2021-08-16 19:52:51,382 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-34] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-16 19:52:51,383 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-34] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 19:52:51,383 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-34] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-16 19:52:51,383 DEBUG org.hibernate.SQL [Thread-34] drop table if exists book CASCADE 
+2021-08-16 19:52:51,385 DEBUG org.hibernate.SQL [Thread-34] drop sequence if exists hibernate_sequence
+2021-08-16 19:52:51,587 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-34] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-16 19:52:51,587 INFO com.zaxxer.hikari.HikariDataSource [Thread-34] HikariPool-7 - Shutdown initiated...
+2021-08-16 19:52:51,590 INFO com.zaxxer.hikari.HikariDataSource [Thread-34] HikariPool-7 - Shutdown completed.
+2021-08-16 19:52:51,735 INFO com.example.demo.DemoApplication [restartedMain] Starting DemoApplication using Java 11.0.2 on LAPTOP-25JFQA77 with PID 2084 (C:\Users\rezed\git\credit-store-server-1\target\classes started by rezed in C:\Users\rezed\git\credit-store-server-1)
+2021-08-16 19:52:51,735 DEBUG com.example.demo.DemoApplication [restartedMain] Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-08-16 19:52:51,735 INFO com.example.demo.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-16 19:52:52,063 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-16 19:52:52,064 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 19:52:52,078 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2021-08-16 19:52:52,088 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-16 19:52:52,088 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-16 19:52:52,093 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.demo.repo.BookRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-08-16 19:52:52,093 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 4 ms. Found 0 MongoDB repository interfaces.
+2021-08-16 19:52:52,226 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-16 19:52:52,227 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-16 19:52:52,228 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-16 19:52:52,228 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-08-16 19:52:52,292 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-16 19:52:52,292 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 552 ms
+2021-08-16 19:52:52,318 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Starting...
+2021-08-16 19:52:52,320 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Start completed.
+2021-08-16 19:52:52,320 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-08-16 19:52:52,357 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 19:52:52,368 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-16 19:52:52,396 DEBUG org.hibernate.SQL [restartedMain] drop table if exists book CASCADE 
+2021-08-16 19:52:52,396 DEBUG org.hibernate.SQL [restartedMain] drop sequence if exists hibernate_sequence
+2021-08-16 19:52:52,396 DEBUG org.hibernate.SQL [restartedMain] create sequence hibernate_sequence start with 1 increment by 1
+2021-08-16 19:52:52,397 DEBUG org.hibernate.SQL [restartedMain] create table book (id bigint not null, name varchar(255), primary key (id))
+2021-08-16 19:52:52,398 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/rezed/git/credit-store-server-1/target/classes/import.sql'
+2021-08-16 19:52:52,398 DEBUG org.hibernate.SQL [restartedMain] insert into book values(1, 'The Tartar Steppe')
+2021-08-16 19:52:52,398 DEBUG org.hibernate.SQL [restartedMain] insert into book values(2, 'Poem Strip')
+2021-08-16 19:52:52,398 DEBUG org.hibernate.SQL [restartedMain] insert into book values(3, 'Restless Nights: Selected Stories of Dino Buzzati')
+2021-08-16 19:52:52,399 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 19:52:52,399 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 19:52:52,432 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-16 19:52:52,483 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [restartedMain] Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 19:52:52,483 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [restartedMain] Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 19:52:52,489 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [restartedMain] Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 19:52:52,532 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 19:52:52,590 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-16 19:52:52,694 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-16 19:52:52,698 INFO org.mongodb.driver.connection [cluster-ClusterId{value='611a97e4e5fdb30ddad207a7', description='null'}-localhost:27017] Opened connection [connectionId{localValue:30, serverValue:669}] to localhost:27017
+2021-08-16 19:52:52,701 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='611a97e4e5fdb30ddad207a7', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1332500}
+2021-08-16 19:52:52,701 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='611a97e4e5fdb30ddad207a7', description='null'}-localhost:27017] Opened connection [connectionId{localValue:29, serverValue:670}] to localhost:27017
+2021-08-16 19:52:52,767 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-16 19:52:52,772 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-16 19:52:52,779 INFO com.example.demo.DemoApplication [restartedMain] Started DemoApplication in 1.096 seconds (JVM running for 5144.482)
+2021-08-16 19:52:52,782 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-08-16 19:53:06,433 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-16 19:53:06,433 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] Initializing Servlet 'dispatcherServlet'
+2021-08-16 19:53:06,434 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-4] Completed initialization in 1 ms
+2021-08-16 19:53:06,435 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-4] GET/books
+2021-08-16 19:53:06,442 DEBUG org.hibernate.SQL [http-nio-8080-exec-4] select book0_.id as id1_0_, book0_.name as name2_0_ from book book0_
+2021-08-16 19:53:06,445 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [http-nio-8080-exec-4] Session Metrics {
+    269800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    150900 nanoseconds spent preparing 1 JDBC statements;
+    158300 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    4000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 19:53:06,446 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-4] [{"id":1,"name":"The Tartar Steppe"},{"id":2,"name":"Poem Strip"},{"id":3,"name":"Restless Nights: Selected Stories of Dino Buzzati"}]
+2021-08-16 19:53:08,027 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-7] GET/books
+2021-08-16 19:53:08,029 DEBUG org.hibernate.SQL [http-nio-8080-exec-7] select book0_.id as id1_0_, book0_.name as name2_0_ from book book0_
+2021-08-16 19:53:08,032 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [http-nio-8080-exec-7] Session Metrics {
+    39300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    74800 nanoseconds spent preparing 1 JDBC statements;
+    128000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    4600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 19:53:08,032 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-7] [{"id":1,"name":"The Tartar Steppe"},{"id":2,"name":"Poem Strip"},{"id":3,"name":"Restless Nights: Selected Stories of Dino Buzzati"}]
+2021-08-16 20:10:55,049 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-39] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-16 20:10:55,050 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-39] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 20:10:55,050 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-39] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-16 20:10:55,050 DEBUG org.hibernate.SQL [Thread-39] drop table if exists book CASCADE 
+2021-08-16 20:10:55,052 DEBUG org.hibernate.SQL [Thread-39] drop sequence if exists hibernate_sequence
+2021-08-16 20:10:55,259 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [Thread-39] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-08-16 20:10:55,259 INFO com.zaxxer.hikari.HikariDataSource [Thread-39] HikariPool-8 - Shutdown initiated...
+2021-08-16 20:10:55,263 INFO com.zaxxer.hikari.HikariDataSource [Thread-39] HikariPool-8 - Shutdown completed.
+2021-08-16 20:10:55,380 INFO com.example.demo.DemoApplication [restartedMain] Starting DemoApplication using Java 11.0.2 on LAPTOP-25JFQA77 with PID 2084 (C:\Users\rezed\git\credit-store-server-1\target\classes started by rezed in C:\Users\rezed\git\credit-store-server-1)
+2021-08-16 20:10:55,380 DEBUG com.example.demo.DemoApplication [restartedMain] Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-08-16 20:10:55,380 INFO com.example.demo.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-16 20:25:22,919 INFO com.example.demo.DemoApplication [restartedMain] Starting DemoApplication using Java 11.0.2 on LAPTOP-25JFQA77 with PID 25364 (C:\Users\rezed\git\credit-store-server-1\target\classes started by rezed in C:\Users\rezed\git\credit-store-server-1)
+2021-08-16 20:25:22,924 DEBUG com.example.demo.DemoApplication [restartedMain] Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-08-16 20:25:22,924 INFO com.example.demo.DemoApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-16 20:25:22,981 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-16 20:25:22,981 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-16 20:25:23,753 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-16 20:25:23,755 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-16 20:25:23,836 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2021-08-16 20:25:23,885 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-16 20:25:23,885 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-16 20:25:23,893 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.demo.repo.BookRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2021-08-16 20:25:23,894 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2021-08-16 20:25:24,599 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-16 20:25:24,612 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-16 20:25:24,613 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-16 20:25:24,613 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-08-16 20:25:24,737 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-16 20:25:24,737 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1756 ms
+2021-08-16 20:25:24,789 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-16 20:25:25,048 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-16 20:25:25,058 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2021-08-16 20:25:25,273 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-16 20:25:25,342 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-08-16 20:25:25,521 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-16 20:25:25,697 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-16 20:25:26,438 DEBUG org.hibernate.SQL [restartedMain] drop table if exists book CASCADE 
+2021-08-16 20:25:26,440 DEBUG org.hibernate.SQL [restartedMain] drop sequence if exists hibernate_sequence
+2021-08-16 20:25:26,443 DEBUG org.hibernate.SQL [restartedMain] create sequence hibernate_sequence start with 1 increment by 1
+2021-08-16 20:25:26,445 DEBUG org.hibernate.SQL [restartedMain] create table book (id bigint not null, name varchar(255), primary key (id))
+2021-08-16 20:25:26,452 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/rezed/git/credit-store-server-1/target/classes/import.sql'
+2021-08-16 20:25:26,452 DEBUG org.hibernate.SQL [restartedMain] insert into book values(1, 'The Tartar Steppe')
+2021-08-16 20:25:26,454 DEBUG org.hibernate.SQL [restartedMain] insert into book values(2, 'Poem Strip')
+2021-08-16 20:25:26,455 DEBUG org.hibernate.SQL [restartedMain] insert into book values(3, 'Restless Nights: Selected Stories of Dino Buzzati')
+2021-08-16 20:25:26,457 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-16 20:25:26,467 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-16 20:25:26,508 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-16 20:25:26,729 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [restartedMain] Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 20:25:26,730 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [restartedMain] Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 20:25:26,783 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [restartedMain] Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 20:25:26,879 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-16 20:25:27,005 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-16 20:25:27,276 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-16 20:25:27,350 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='611a9f8746792b5f296d782b', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:672}] to localhost:27017
+2021-08-16 20:25:27,350 INFO org.mongodb.driver.connection [cluster-ClusterId{value='611a9f8746792b5f296d782b', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:671}] to localhost:27017
+2021-08-16 20:25:27,352 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='611a9f8746792b5f296d782b', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23684200}
+2021-08-16 20:25:27,540 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-16 20:25:27,567 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-16 20:25:27,579 INFO com.example.demo.DemoApplication [restartedMain] Started DemoApplication in 5.095 seconds (JVM running for 6.567)
+2021-08-16 20:25:59,642 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-16 20:25:59,643 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-16 20:25:59,644 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-08-16 20:25:59,660 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-1] GET/books
+2021-08-16 20:25:59,932 DEBUG org.hibernate.SQL [http-nio-8080-exec-1] select book0_.id as id1_0_, book0_.name as name2_0_ from book book0_
+2021-08-16 20:26:00,054 INFO org.hibernate.engine.internal.StatisticalLoggingSessionEventListener [http-nio-8080-exec-1] Session Metrics {
+    370700 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    3678300 nanoseconds spent preparing 1 JDBC statements;
+    483900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    19800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2021-08-16 20:26:00,058 DEBUG com.example.demo.service.logger.FilterLogger [http-nio-8080-exec-1] [{"id":1,"name":"The Tartar Steppe"},{"id":2,"name":"Poem Strip"},{"id":3,"name":"Restless Nights: Selected Stories of Dino Buzzati"}]

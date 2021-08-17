@@ -14,7 +14,7 @@ public class DataSourceConfig {
 	
 	
 	 @Autowired
-	 DataSource dataSource;
+	 private DataSource dataSource;
 
 	 @Bean
 	 public HikariDataSourcePoolMetadata dataSourcePoolMetadata() {

@@ -33,7 +33,7 @@ public class AspectLogger {
 		stopWatch.stop();
 
 		// Log method execution time
-		String eventId = MDC.get(CORRELATION_ID_LOG_VAR_NAME);
+		final String eventId = MDC.get(CORRELATION_ID_LOG_VAR_NAME);
 		log.info("Execution time of " + className + "." + methodName + " " + ":: " + stopWatch.getTotalTimeMillis()
 				+ " ms " + eventId);
 

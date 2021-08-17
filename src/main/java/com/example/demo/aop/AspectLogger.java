@@ -10,7 +10,7 @@ import org.springframework.util.StopWatch;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Component
+@Configuration
 @Aspect
 @Slf4j
 public class AspectLogger {

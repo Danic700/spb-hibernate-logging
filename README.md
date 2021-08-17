@@ -1,0 +1,1 @@
+# spb-hibernate-logging

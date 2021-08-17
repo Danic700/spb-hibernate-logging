@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class DiagnosticsServiceImpl implements DiagnosticsService{
 	
 	@Autowired
-	HikariDataSourcePoolMetadata dataSourcePoolMetadata;
+	private HikariDataSourcePoolMetadata dataSourcePoolMetadata;
 	
 	@Override
 	public String getDatasourceInfo() {
